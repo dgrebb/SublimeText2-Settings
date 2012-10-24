@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+{exp:switchee variable="${1}" ${2:parse="inward"}}
+
+	{case value="${3}"}
+		${4}
+	{/case}
+
+	{case value="${5}" ${6:default="Yes"}}
+		${6}
+	{/case}
+
+{/exp:switchee}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>switchee</tabTrigger>
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
